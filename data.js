@@ -16,31 +16,31 @@ const dashboardData = {
     salesRevenue: {
         month: {
             all: {
-                labels: ['周1', '周2', '周3', '周4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [125000, 142000, 138000, 156000],
                 total: 561000,
                 change: 12.5
             },
             taipei: {
-                labels: ['周1', '周2', '周3', '周4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [45000, 52000, 48000, 58000],
                 total: 203000,
                 change: 15.2
             },
             taichung: {
-                labels: ['周1', '周2', '周3', '周4'],
+                labels:['周一', '周二', '周三', '周四'],
                 data: [32000, 38000, 35000, 42000],
                 total: 147000,
                 change: 8.7
             },
             kaohsiung: {
-                labels: ['周1', '周2', '周3', '周4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [28000, 31000, 33000, 35000],
                 total: 127000,
                 change: 11.3
             },
             hsinchu: {
-                labels: ['周1', '周2', '周3', '周4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [20000, 21000, 22000, 21000],
                 total: 84000,
                 change: 6.8
@@ -342,3 +342,4 @@ const dashboardData = {
 
 
 // Data is available globally as dashboardData
+
