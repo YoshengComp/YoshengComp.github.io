@@ -15,18 +15,18 @@
                 <h1>Command Center Dashboard</h1>
                 <div class="header-controls">
                     <select id="branchSelector" class="branch-selector">
-                        <option value="all">All Branches</option>
-                        <option value="taipei">Taipei Branch</option>
-                        <option value="taichung">Taichung Branch</option>
-                        <option value="kaohsiung">Kaohsiung Branch</option>
-                        <option value="hsinchu">Hsinchu Branch</option>
+                        <option value="all">所有分店</option>
+                        <option value="taipei">台北分店</option>
+                        <option value="taichung">台中分店</option>
+                        <option value="kaohsiung">高雄分店</option>
+                        <option value="hsinchu">新竹分店</option>
                     </select>
                     <select id="timeRange" class="time-range">
-                        <option value="today">Today</option>
-                        <option value="week">This Week</option>
-                        <option value="month" selected>This Month</option>
-                        <option value="quarter">This Quarter</option>
-                        <option value="year">This Year</option>
+                        <option value="today">今天</option>
+                        <option value="week">周</option>
+                        <option value="month" selected>月</option>
+                        <option value="quarter">季</option>
+                        <option value="year">今年</option>
                     </select>
                     <button id="refreshBtn" class="refresh-btn">Refresh</button>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="kpi-card">
                     <div class="kpi-icon sales-icon">💰</div>
                     <div class="kpi-content">
-                        <h3>Total Revenue</h3>
+                        <h3>總營業額</h3>
                         <div class="kpi-value" id="totalRevenue">$0</div>
                         <div class="kpi-change positive" id="revenueChange">+0%</div>
                     </div>
@@ -48,7 +48,7 @@
                 <div class="kpi-card">
                     <div class="kpi-icon visitors-icon">👥</div>
                     <div class="kpi-content">
-                        <h3>Total Visitors</h3>
+                        <h3>來客數</h3>
                         <div class="kpi-value" id="totalVisitors">0</div>
                         <div class="kpi-change positive" id="visitorsChange">+0%</div>
                     </div>
@@ -56,7 +56,7 @@
                 <div class="kpi-card">
                     <div class="kpi-icon consumption-icon">🛒</div>
                     <div class="kpi-content">
-                        <h3>Avg. Consumption</h3>
+                        <h3>平均消費</h3>
                         <div class="kpi-value" id="avgConsumption">$0</div>
                         <div class="kpi-change positive" id="consumptionChange">+0%</div>
                     </div>
@@ -64,7 +64,7 @@
                 <div class="kpi-card">
                     <div class="kpi-icon products-icon">📦</div>
                     <div class="kpi-content">
-                        <h3>Products Sold</h3>
+                        <h3>產品銷售</h3>
                         <div class="kpi-value" id="productsSold">0</div>
                         <div class="kpi-change positive" id="productsChange">+0%</div>
                     </div>
@@ -76,7 +76,7 @@
                 <!-- Sales Revenue Module -->
                 <div class="chart-module">
                     <div class="module-header">
-                        <h2>Sales Revenue Analysis</h2>
+                        <h2>銷售額分析</h2>
                         <div class="module-controls">
                             <button class="chart-type-btn active" data-chart="revenue-line">Line</button>
                             <button class="chart-type-btn" data-chart="revenue-bar">Bar</button>
@@ -91,7 +91,7 @@
                 <!-- Visitor Analytics Module -->
                 <div class="chart-module">
                     <div class="module-header">
-                        <h2>Visitor Analytics</h2>
+                        <h2>來客分析</h2>
                         <div class="module-controls">
                             <button class="chart-type-btn active" data-chart="visitors-line">Line</button>
                             <button class="chart-type-btn" data-chart="visitors-bar">Bar</button>
@@ -106,7 +106,7 @@
                 <!-- Consumption Analysis Module -->
                 <div class="chart-module">
                     <div class="module-header">
-                        <h2>Consumption Analysis</h2>
+                        <h2>消費分析</h2>
                         <div class="module-controls">
                             <button class="chart-type-btn active" data-chart="consumption-line">Line</button>
                             <button class="chart-type-btn" data-chart="consumption-bar">Bar</button>
@@ -121,7 +121,7 @@
                 <!-- Product Sales Module -->
                 <div class="chart-module">
                     <div class="module-header">
-                        <h2>Product Sales Performance</h2>
+                        <h2>產品銷售分析</h2>
                         <div class="module-controls">
                             <button class="chart-type-btn active" data-chart="products-bar">Bar</button>
                             <button class="chart-type-btn" data-chart="products-pie">Pie</button>
@@ -136,7 +136,7 @@
                 <!-- Branch Performance Comparison -->
                 <div class="chart-module full-width">
                     <div class="module-header">
-                        <h2>Branch Performance Comparison</h2>
+                        <h2>分店比較</h2>
                         <div class="module-controls">
                             <button class="chart-type-btn active" data-chart="branch-bar">Bar</button>
                             <button class="chart-type-btn" data-chart="branch-radar">Radar</button>
@@ -151,7 +151,7 @@
                 <!-- Real-time Activity Feed -->
                 <div class="activity-module">
                     <div class="module-header">
-                        <h2>Real-time Activity</h2>
+                        <h2>實時分析</h2>
                         <div class="activity-status">
                             <span class="status-indicator active"></span>
                             <span>Live</span>
@@ -175,11 +175,12 @@
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loading-spinner"></div>
-        <p>Loading dashboard data...</p>
+        <p>資料載入中......</p>
     </div>
 
     <script src="data.js"></script>
     <script src="charts.js"></script>
     <script src="dashboard.js"></script>
 </body>
+
 </html>
