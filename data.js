@@ -68,31 +68,31 @@ const dashboardData = {
     visitorAnalytics: {
         month: {
             all: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [2800, 3200, 3100, 3500],
                 total: 12600,
                 change: 18.5
             },
             taipei: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [1200, 1400, 1350, 1500],
                 total: 5450,
                 change: 22.1
             },
             taichung: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels:['周一', '周二', '周三', '周四'],
                 data: [800, 900, 850, 950],
                 total: 3500,
                 change: 15.8
             },
             kaohsiung: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [500, 600, 580, 650],
                 total: 2330,
                 change: 12.3
             },
             hsinchu: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周一', '周二', '周三', '周四'],
                 data: [300, 300, 320, 400],
                 total: 1320,
                 change: 25.0
@@ -100,7 +100,7 @@ const dashboardData = {
         },
         week: {
             all: {
-                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                labels: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'],
                 data: [420, 380, 450, 520, 680, 850, 720],
                 total: 4020,
                 change: 12.8
@@ -342,4 +342,5 @@ const dashboardData = {
 
 
 // Data is available globally as dashboardData
+
 
