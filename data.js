@@ -2,11 +2,11 @@
 const dashboardData = {
     // Branch information
     branches: {
-        all: 'All Branches',
-        taipei: 'Taipei Branch',
-        taichung: 'Taichung Branch',
-        kaohsiung: 'Kaohsiung Branch',
-        hsinchu: 'Hsinchu Branch'
+        all: '所有分店',
+        taipei: '台北分店',
+        taichung: '台中分店',
+        kaohsiung: '高雄分店',
+        hsinchu: '新竹分店'
     },
 
     // Time periods for data filtering
@@ -16,31 +16,31 @@ const dashboardData = {
     salesRevenue: {
         month: {
             all: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周1', '周2', '周3', '周4'],
                 data: [125000, 142000, 138000, 156000],
                 total: 561000,
                 change: 12.5
             },
             taipei: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周1', '周2', '周3', '周4'],
                 data: [45000, 52000, 48000, 58000],
                 total: 203000,
                 change: 15.2
             },
             taichung: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周1', '周2', '周3', '周4'],
                 data: [32000, 38000, 35000, 42000],
                 total: 147000,
                 change: 8.7
             },
             kaohsiung: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周1', '周2', '周3', '周4'],
                 data: [28000, 31000, 33000, 35000],
                 total: 127000,
                 change: 11.3
             },
             hsinchu: {
-                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                labels: ['周1', '周2', '周3', '周4'],
                 data: [20000, 21000, 22000, 21000],
                 total: 84000,
                 change: 6.8
@@ -48,7 +48,7 @@ const dashboardData = {
         },
         week: {
             all: {
-                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                labels: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'],
                 data: [18000, 22000, 25000, 28000, 32000, 35000, 28000],
                 total: 188000,
                 change: 8.3
@@ -56,7 +56,7 @@ const dashboardData = {
         },
         year: {
             all: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                labels: ['1月份', '2月份', '3月份', '4月份', '5月份', '6月份', '7月份', '8月份, '9月份' , '10月份', '11月份', '12月份'],
                 data: [520000, 480000, 610000, 580000, 650000, 720000, 680000, 750000, 690000, 720000, 680000, 750000],
                 total: 7830000,
                 change: 14.2
@@ -339,5 +339,6 @@ const dashboardData = {
         return `${percentage > 0 ? '+' : ''}${percentage.toFixed(1)}%`;
     }
 };
+
 
 // Data is available globally as dashboardData
