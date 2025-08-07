@@ -26,7 +26,7 @@ class ChartManager {
             data: {
                 labels: data.labels,
                 datasets: [{
-                    label: 'Revenue ($)',
+                    label: '收入 ($)',
                     data: data.data,
                     borderColor: dashboardData.colorSchemes.revenue[0],
                     backgroundColor: this.createGradient(ctx, dashboardData.colorSchemes.revenue[0]),
@@ -162,7 +162,7 @@ class ChartManager {
             data: {
                 labels: data.categories,
                 datasets: [{
-                    label: 'Consumption ($)',
+                    label: '消費 ($)',
                     data: data.data,
                     borderColor: dashboardData.colorSchemes.consumption[0],
                     backgroundColor: this.createGradient(ctx, dashboardData.colorSchemes.consumption[0]),
@@ -231,7 +231,7 @@ class ChartManager {
             data: {
                 labels: data.products,
                 datasets: [{
-                    label: 'Quantity Sold',
+                    label: '銷售數量',
                     data: data.quantities,
                     backgroundColor: dashboardData.colorSchemes.products.map(color => color + '80'),
                     borderColor: dashboardData.colorSchemes.products,
@@ -298,7 +298,7 @@ class ChartManager {
                 labels: data.branches,
                 datasets: [
                     {
-                        label: 'Revenue ($)',
+                        label: '收入 ($)',
                         data: data.metrics.revenue,
                         backgroundColor: dashboardData.colorSchemes.branches[0] + '80',
                         borderColor: dashboardData.colorSchemes.branches[0],
@@ -306,7 +306,7 @@ class ChartManager {
                         yAxisID: 'y'
                     },
                     {
-                        label: 'Visitors',
+                        label: '顧客',
                         data: data.metrics.visitors,
                         backgroundColor: dashboardData.colorSchemes.branches[1] + '80',
                         borderColor: dashboardData.colorSchemes.branches[1],
@@ -561,4 +561,5 @@ class ChartManager {
 let chartManager;
 document.addEventListener('DOMContentLoaded', function() {
     chartManager = new ChartManager();
+
 });
